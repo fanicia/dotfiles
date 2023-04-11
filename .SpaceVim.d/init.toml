@@ -38,15 +38,22 @@ auto_completion_tab_key_behavior = "cycle"
 name = "default"
 
 [[layers]]
-name = "github"
+name = "colorscheme"
+
+[[layers]]
+name = "lang#go"
+format_on_save = true
+
+[[layers]]
+name = "lsp"
+filetypes = [
+  "go"
+]
 
 [[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
-
-[[layers]]
-name = "colorscheme"
 
 [[layers]]
 name = "fzf"
