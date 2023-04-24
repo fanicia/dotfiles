@@ -30,50 +30,55 @@
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "cycle"
 
 [[layers]]
-name = "default"
+  name = "default"
 
 [[layers]]
-name = "colorscheme"
+  name = "colorscheme"
 
 [[layers]]
-name = "lang#go"
-format_on_save = true
+  name = "lang#go"
+  format_on_save = true
 
 [[layers]]
-name = "lsp"
-enabled_clients = ["gopls"]
-filetypes = [
-  "go"
-]
+  name = "lsp"
+  enabled_clients = ["gopls"]
+  filetypes = [
+    "go"
+  ]
 
 [[layers]]
   name = "github"
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
 
 [[layers]]
-name = "fzf"
+  name = "fzf"
+
+[[layers]]
+  name = "lang#graphql"
+
+## Custom plugins
 
 [[custom_plugins]]
-name = 'hashivim/vim-terraform'
-merged = false
+  name = 'hashivim/vim-terraform'
+  merged = false
 
 [[custom_plugins]]
-name = 'vim-syntastic/syntastic'
-merged = false
+  name = 'vim-syntastic/syntastic'
+  merged = false
 
 [[custom_plugins]]
-name = 'juliosueiras/vim-terraform-completion'
-merged = false
+  name = 'juliosueiras/vim-terraform-completion'
+  merged = false
 
 [[custom_plugins]]
-name = "posva/vim-vue"
-merged = false
+  name = "posva/vim-vue"
+  merged = false
