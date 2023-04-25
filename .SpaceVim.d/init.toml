@@ -65,6 +65,9 @@
 [[layers]]
   name = "lang#graphql"
 
+[[layers]]
+  name = "lang#markdown"
+
 ## Custom plugins
 
 [[custom_plugins]]
@@ -82,3 +85,8 @@
 [[custom_plugins]]
   name = "posva/vim-vue"
   merged = false
+
+[[custom_plugins]]
+  name = "direnv/direnv.vim"
+
+# Place custom functions or commands in ~/.SpaceVim.d/something/somefile.vim
