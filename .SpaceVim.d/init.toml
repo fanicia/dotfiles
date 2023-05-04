@@ -68,6 +68,11 @@
 [[layers]]
   name = "lang#markdown"
 
+# Requires `brew install delve` or equivalent on linux
+[[layers]]
+  name = "debug"
+  debugger_plugin = "vimspector"
+
 ## Custom plugins
 
 [[custom_plugins]]
