@@ -27,6 +27,7 @@
     statusline_unicode = false
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
+    bootstrap_before = 'myspacevim#before'
 
 # Enable autocomplete layer
 [[layers]]
