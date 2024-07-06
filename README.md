@@ -8,6 +8,6 @@
 * `gcc`
 * `git`
 * `fd-find`
-* `rg`
+* `ripgrep`
 * `gnu-sed`
 * `lazygit`
