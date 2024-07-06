@@ -7,7 +7,7 @@
 * `npm`
 * `gcc`
 * `git`
-* `fdfind`
+* `fd-find`
 * `rg`
 * `gnu-sed`
 * `lazygit`
