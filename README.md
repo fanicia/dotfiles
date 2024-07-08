@@ -7,6 +7,7 @@
 * `npm`
 * `yarn`
 * `gcc`
+* `make`
 * `git`
 * `fd-find`
 * `ripgrep`
