@@ -5,6 +5,7 @@
 
 * `nvim`
 * `npm`
+* `yarn`
 * `gcc`
 * `git`
 * `fd-find`
