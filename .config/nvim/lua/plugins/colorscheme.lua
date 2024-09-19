@@ -1,12 +1,12 @@
 return {
   -- add gruvbox
-  { "Mofiqul/vscode.nvim" },
+  { "navarasu/onedark.nvim" },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vscode",
+      colorscheme = "onedark",
       -- colorscheme = "catppuccin", <-- this is the default theme
     },
   },
