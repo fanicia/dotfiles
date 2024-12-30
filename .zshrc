@@ -73,6 +73,7 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,3 +103,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# nvm node manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# exports
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:/snap/bin/"
+export PATH="$PATH:$HOME/.local/bin"
+
+
+
+# Created by `pipx` on 2024-09-28 08:56:48
+export PATH="$PATH:/home/fanicia/.local/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
