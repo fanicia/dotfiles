@@ -37,15 +37,6 @@ return {
       },
     },
   },
-  -- Disable copilot on markdown files
-  {
-    "zbirenbaum/copilot.lua",
-    opts = {
-      filetypes = {
-        markdown = false,
-      },
-    },
-  },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = {
@@ -61,7 +52,7 @@ return {
     end,
     event = "VeryLazy",
     keys = {
-      { "<leader>ccb", ":CopilotChatBuffer ", desc = "CopilotChat - Chat with current buffer" },
+      { "<leader>ccb", ":CopilotChat ", desc = "CopilotChat - Chat with current buffer" },
       { "<leader>cce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
       { "<leader>cct", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
       {
@@ -83,7 +74,7 @@ return {
       },
       {
         "<leader>ccf",
-        "<cmd>CopilotChatFixDiagnostic<cr>", -- Get a fix for the diagnostic message under the cursor.
+        "<cmd>CopilotChatFix<cr>", -- Get a fix for the diagnostic message under the cursor.
         desc = "CopilotChat - Fix diagnostic",
       },
       {
