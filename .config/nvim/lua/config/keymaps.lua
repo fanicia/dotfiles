@@ -8,7 +8,7 @@ local wk = require("which-key")
 
 wk.add({
   -- Make a custom keymap section
-  { "<leader>o", desc = "Custom Stuff", icon = LazyVim.config.icons.kinds.Keyword }, -- group
+  { "<leader>o", desc = "Custom Stuff", icon = LazyVim.config.icons.kinds.Keyword },
   {
     "<leader>ob",
     mode = "n",
