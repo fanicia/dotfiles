@@ -22,3 +22,16 @@ wk.add({
     desc = "Toggle Background Theme",
   },
 })
+
+-- CodeCompanion keybinds
+wk.add({
+  {
+    "<leader>at",
+    mode = "n",
+    function()
+      vim.cmd("CodeCompanionChat Toggle")
+    end,
+    desc = "Toggle CodeCompanion Chat",
+    icon = LazyVim.config.icons.kinds.Copilot,
+  },
+})
