@@ -28,4 +28,48 @@ return {
     end,
     ft = { "markdown" },
   },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        go = { "goimports", "gofumpt" },
+      },
+    },
+  },
+  -- found here: https://github.com/olimorris/codecompanion.nvim/discussions/154
+  {
+    "echasnovski/mini.diff",
+    config = function()
+      local diff = require("mini.diff")
+      diff.setup({
+        -- Disabled by default
+        source = diff.gen_source.none(),
+      })
+    end,
+  },
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "echasnovski/mini.diff",
+    },
+    opts = {
+      strategies = {
+        chat = {
+          adapter = "copilot",
+        },
+        inline = {
+          adapter = "copilot",
+        },
+      },
+      display = {
+        diff = {
+          provider = "mini_diff",
+          opts = { "algorithm:patience" },
+        },
+      },
+    },
+  },
 }
