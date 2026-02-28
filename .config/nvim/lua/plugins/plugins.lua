@@ -1,5 +1,15 @@
 return {
   {
+    "christoomey/vim-tmux-navigator",
+    cmd = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight" },
+    keys = {
+      { "<C-h>", "<cmd>TmuxNavigateLeft<cr>", desc = "Navigate Left" },
+      { "<C-j>", "<cmd>TmuxNavigateDown<cr>", desc = "Navigate Down" },
+      { "<C-k>", "<cmd>TmuxNavigateUp<cr>", desc = "Navigate Up" },
+      { "<C-l>", "<cmd>TmuxNavigateRight<cr>", desc = "Navigate Right" },
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -37,23 +47,12 @@ return {
       },
     },
   },
-  -- found here: https://github.com/olimorris/codecompanion.nvim/discussions/154
-  {
-    "echasnovski/mini.diff",
-    config = function()
-      local diff = require("mini.diff")
-      diff.setup({
-        -- Disabled by default
-        source = diff.gen_source.none(),
-      })
-    end,
-  },
   {
     "olimorris/codecompanion.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
-      "echasnovski/mini.diff",
+      "nvim-mini/mini.diff",
     },
     opts = {
       strategies = {
@@ -68,6 +67,19 @@ return {
         diff = {
           provider = "mini_diff",
           opts = { "algorithm:patience" },
+        },
+      },
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      picker = {
+        sources = {
+          files = {
+            hidden = true,
+            ignored = true,
+          },
         },
       },
     },

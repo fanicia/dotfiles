@@ -6,3 +6,6 @@
 local opt = vim.opt
 
 opt.conceallevel = 0 -- Don't conceal my markdown, please
+
+-- Set Snacks as the picker for LazyVim. This was necessary for the snacks.nvim conifg in lua/config/plugins.lua to work.
+vim.g.lazyvim_picker = "snacks"
